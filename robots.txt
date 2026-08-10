@@ -1,0 +1,6 @@
+# Countdrop is not released yet. The site has to stay reachable — Apple's
+# review clicks the privacy and support URLs, and Let's Encrypt needs it to
+# issue the certificate — but there is nothing here worth indexing yet.
+# Remove this file at launch.
+User-agent: *
+Disallow: /
