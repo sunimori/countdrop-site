@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- Utility page like support/ and privacy/: reachable by link, never by
+     search. The whole point of this page is the fragment in its URL. -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Countdrop — Race</title>
+<meta name="description" content="Someone challenged you to today's Countdrop daily board. Get the app and race their run, move for move.">
+<style>
+  :root { color-scheme: dark; }
+  body {
+    margin: 0 auto; padding: 64px 24px 96px; max-width: 560px;
+    background: #12141a; color: #f1f3f5; text-align: center;
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  .tile {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 56px; height: 56px; border-radius: 14px; margin-bottom: 18px;
+    background: #fcc419; color: #12141a; font-size: 30px; font-weight: 800;
+  }
+  h1 { font-size: 28px; margin: 0 0 10px; }
+  p { color: #ced4da; margin: 0 0 14px; }
+  .who { color: #ffd43b; font-weight: 700; }
+  .cta {
+    display: inline-block; margin-top: 22px; padding: 15px 34px;
+    background: #ffd43b; color: #12141a; font-weight: 800; font-size: 17px;
+    border-radius: 14px; text-decoration: none;
+  }
+  .hint { margin-top: 26px; font-size: 14px; color: #868e96; }
+  .hint a { color: #ffd43b; }
+</style>
+</head>
+<body>
+
+<div class="tile">3</div>
+<h1 id="headline">You've been challenged</h1>
+<p id="detail">A friend wants to race you on a Countdrop daily board — the same
+tiles, in the same order, move for move against their recorded run.</p>
+<p>Countdrop is a free number puzzle. No ads, no accounts.</p>
+
+<a class="cta" href="https://apps.apple.com/app/id6799628531">Get Countdrop</a>
+
+<p class="hint">Already have it? Opening this link on your iPhone jumps straight
+into the race. If it opened here instead, copy this page's address and paste it
+anywhere in Countdrop's daily screen.<br><br>
+<a href="../index.html">countdrop.com</a></p>
+
+<script>
+// The fragment is the challenge itself: CD1~day~name~moves. Only the first
+// two fields are displayed; the moves stay opaque — they are the solution to
+// that day's board, and this page must dare, not spoil. textContent keeps a
+// crafted name from becoming markup.
+(function () {
+  var raw = decodeURIComponent(location.hash.slice(1) || "");
+  var parts = raw.split("~");
+  if (parts.length === 4 && parts[0] === "CD1") {
+    var name = parts[2].slice(0, 16).trim();
+    var day = parts[1];
+    if (name) {
+      document.getElementById("headline").textContent =
+        name + " challenged you";
+    }
+    document.getElementById("detail").textContent =
+      "Race their " + day + " daily run, move for move, on the same board — " +
+      "the same tiles, in the same order, for every player on earth that day.";
+  }
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["96S67W899L.com.sunimori.countdrop"],
+        "components": [
+          { "/": "/race", "comment": "Daily race challenge links" },
+          { "/": "/race/*" }
+        ]
+      }
+    ]
+  }
+}

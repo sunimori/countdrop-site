@@ -24,6 +24,30 @@ Screenshots come from the game itself, so regenerate them rather than editing by
 hand: capture raws on the `Countdrop-Shots` simulator, then re-run the resize
 step in the parent project.
 
+**On launch day, open this site to search:** delete `robots.txt` and the
+`noindex` meta tag in `index.html`. Until then the whole site is blocked, which
+is deliberate — it still has to be *reachable* for Apple's reviewer and for
+certificate issuance, just not findable. `support/`, `privacy/` and `race/`
+keep their `noindex` permanently: they are utility pages people arrive at by
+link, and indexing them only competes with the landing page.
+
+**This site is half of the app's race links.** `.well-known/
+apple-app-site-association` is what lets iOS open `countdrop.com/race#…`
+straight into Countdrop, and `race/index.html` is what everyone without the
+app sees instead. `.nojekyll` is not clutter: without it GitHub Pages runs the
+site through Jekyll, which silently drops dot-directories — the AASA file
+would simply not be published, and every race link would fall back to Safari.
+After deploying, confirm Apple's CDN can see it:
+
+```bash
+curl -s https://app-site-association.cdn-apple.com/a/v1/countdrop.com
+```
+
+**The pages make factual claims about the app** — what is synced, what deleting
+the app removes, what we can and cannot read. When save or sync behaviour
+changes in the game, these change with it. Both pages were wrong for one release
+because that did not happen.
+
 ## Why this shape
 
 Apple requires a support URL and a privacy policy URL, and a review will click

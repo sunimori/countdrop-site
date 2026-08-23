@@ -2,9 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<!-- Utility page: kept out of search on purpose, even after launch. It has to
+     be reachable, not findable — Apple's reviewer and the app both link
+     straight here. robots.txt blocks the whole site until launch; see the
+     README. -->
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Countdrop — Privacy Policy</title>
+<meta name="description" content="Countdrop collects no personal data. Progress is saved on your device and mirrored to your own iCloud; we operate no server and cannot read it.">
 <style>
   :root { color-scheme: dark; }
   body {
@@ -18,23 +23,41 @@
   .updated { color: #868e96; font-size: 14px; margin-bottom: 32px; }
   a { color: #ffd43b; }
   .box { background: #1b1e27; border: 1px solid #252936; border-radius: 12px; padding: 18px 20px; }
+  footer { border-top: 1px solid #252936; margin-top: 48px; padding-top: 26px; color: #868e96; font-size: 15px; }
+  footer nav { margin-bottom: 10px; }
+  footer a { text-decoration: none; }
 </style>
 </head>
 <body>
 
 <h1>Countdrop Privacy Policy</h1>
-<p class="updated">Last updated: 9 August 2026</p>
+<p class="updated">Last updated: 17 August 2026</p>
 
 <div class="box">
-  <p><strong>Countdrop does not collect, transmit, or store any personal data.</strong>
+  <p><strong>Countdrop does not collect any personal data.</strong>
   There are no accounts, no analytics, no advertising, and no third-party SDKs of
-  any kind.</p>
+  any kind. We operate no server, and nothing you do in the game reaches us.</p>
 </div>
 
-<h2>What stays on your device</h2>
-<p>Your scores, daily-challenge history, streak, unlocked themes, and your sound
-and haptics preferences are saved only on your device. They are never sent
-anywhere. Deleting the app removes all of it.</p>
+<h2>Where your progress is kept</h2>
+<p>Your scores, daily-challenge history, streak and unlocked themes are saved on
+your device, and — if you are signed in to iCloud — mirrored to your own iCloud
+key-value storage, so that a new phone picks up where the old one left off.</p>
+
+<p>That copy lives in your iCloud account, under your Apple Account. It does not
+pass through any server of ours, and we have no way to read it: there is no
+back end and no CloudKit container on our side. It holds counters and receipts —
+streak length, coins, stars, which themes you have unlocked — and nothing that
+identifies you.</p>
+
+<p>Your sound and haptics preferences stay on the device and are not mirrored.</p>
+
+<p>Deleting the app removes the copy on your device. The copy in iCloud stays
+with your Apple Account — that is what lets a reinstall bring your progress
+back. It belongs to your Apple Account, not to us: we can neither read it nor
+delete it, and it goes with the rest of your iCloud data if you delete that
+account. If you are not signed in to iCloud, nothing is mirrored at all, and
+deleting the app removes everything.</p>
 
 <h2>Game Center</h2>
 <p>If you choose to sign in to Game Center, Countdrop submits your scores and
@@ -60,6 +83,12 @@ address with a new date above.</p>
 
 <h2>Contact</h2>
 <p>Questions about privacy in Countdrop: <a href="mailto:support@countdrop.com">support@countdrop.com</a></p>
+
+<footer>
+  <nav><a href="../index.html">countdrop.com</a> · <a href="../support/index.html">Support</a>
+  · <a href="mailto:support@countdrop.com">support@countdrop.com</a></nav>
+  <div>© 2026 Sunimori.</div>
+</footer>
 
 </body>
 </html>
