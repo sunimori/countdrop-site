@@ -24,12 +24,10 @@ Screenshots come from the game itself, so regenerate them rather than editing by
 hand: capture raws on the `Countdrop-Shots` simulator, then re-run the resize
 step in the parent project.
 
-**On launch day, open this site to search:** delete `robots.txt` and the
-`noindex` meta tag in `index.html`. Until then the whole site is blocked, which
-is deliberate — it still has to be *reachable* for Apple's reviewer and for
-certificate issuance, just not findable. `support/`, `privacy/` and `race/`
-keep their `noindex` permanently: they are utility pages people arrive at by
-link, and indexing them only competes with the landing page.
+**Done at launch (2026-09-01):** `robots.txt` and the `noindex` meta tag in
+`index.html` are gone, so the landing page is open to search. `support/`,
+`privacy/` and `race/` keep their `noindex` permanently: they are utility pages
+people arrive at by link, and indexing them only competes with the landing page.
 
 **This site is half of the app's race links.** `.well-known/
 apple-app-site-association` is what lets iOS open `countdrop.com/race#…`
