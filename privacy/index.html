@@ -1,94 +1,82 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<!-- Utility page: kept out of search on purpose, even after launch. It has to
-     be reachable, not findable — Apple's reviewer and the app both link
-     straight here. robots.txt blocks the whole site until launch; see the
-     README. -->
-<meta name="robots" content="noindex, nofollow">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Countdrop — Privacy Policy</title>
-<meta name="description" content="Countdrop collects no personal data. Progress is saved on your device and mirrored to your own iCloud; we operate no server and cannot read it.">
-<style>
-  :root { color-scheme: dark; }
-  body {
-    margin: 0 auto; padding: 48px 24px 96px; max-width: 720px;
-    background: #12141a; color: #f1f3f5;
-    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  }
-  h1 { font-size: 30px; margin: 0 0 4px; }
-  h2 { font-size: 18px; margin: 40px 0 10px; color: #ffd43b; }
-  p, li { color: #ced4da; }
-  .updated { color: #868e96; font-size: 14px; margin-bottom: 32px; }
-  a { color: #ffd43b; }
-  .box { background: #1b1e27; border: 1px solid #252936; border-radius: 12px; padding: 18px 20px; }
-  footer { border-top: 1px solid #252936; margin-top: 48px; padding-top: 26px; color: #868e96; font-size: 15px; }
-  footer nav { margin-bottom: 10px; }
-  footer a { text-decoration: none; }
-</style>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Countdrop — Privacy Policy</title>
+  <meta name="description" content="Countdrop has no accounts, advertising, or third-party analytics. Learn how iCloud, Game Center, notifications, and App Store purchases are handled.">
+  <meta name="theme-color" content="#08090d">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/site.css?v=20260905-2">
+  <script src="/assets/site.js?v=20260905-2" defer></script>
 </head>
-<body>
+<body class="utility-body">
+  <div class="page-noise" aria-hidden="true"></div>
+  <header class="site-header is-scrolled" data-header>
+    <a class="brand" href="/" aria-label="Countdrop home"><span class="brand-mark" aria-hidden="true"><i>3</i><b></b><em></em></span><span>Countdrop</span></a>
+    <nav class="main-nav" aria-label="Utility navigation"><a href="/">Home</a><a href="/support/">Support</a><a href="/privacy/">Privacy</a></nav>
+    <a class="header-cta" href="https://apps.apple.com/app/id6799628531" target="_blank" rel="noopener"><span aria-hidden="true"></span> App Store</a>
+  </header>
 
-<h1>Countdrop Privacy Policy</h1>
-<p class="updated">Last updated: 17 August 2026</p>
+  <main class="utility-main">
+    <section class="utility-hero reveal">
+      <div class="eyebrow"><span></span> Privacy policy</div>
+      <h1>Your game is yours.</h1>
+      <p>Countdrop has no accounts, advertising, or third-party analytics. We operate no gameplay server and do not build a profile of how you play.</p>
+      <div class="updated">Last updated: 5 September 2026</div>
+    </section>
 
-<div class="box">
-  <p><strong>Countdrop does not collect any personal data.</strong>
-  There are no accounts, no analytics, no advertising, and no third-party SDKs of
-  any kind. We operate no server, and nothing you do in the game reaches us.</p>
-</div>
+    <div class="legal-section reveal">
+      <h2>Information Countdrop collects</h2>
+      <p><strong>Countdrop does not collect personal information on a developer-operated server.</strong> The game contains no advertising SDK and no third-party analytics SDK. Your game activity is not sent to us.</p>
+    </div>
 
-<h2>Where your progress is kept</h2>
-<p>Your scores, daily-challenge history, streak and unlocked themes are saved on
-your device, and — if you are signed in to iCloud — mirrored to your own iCloud
-key-value storage, so that a new phone picks up where the old one left off.</p>
+    <div class="legal-section reveal">
+      <h2>Where your progress is kept</h2>
+      <p>Your scores, Daily Challenge history, streak, in-game currency, earned unlocks, and cosmetic selections are saved on your device. If you are signed in to iCloud, that progress is mirrored to your own iCloud key-value storage so another device can continue from it.</p>
+      <p>The iCloud copy is associated with your Apple Account and does not pass through a server operated by us. We cannot access or delete it. Sound and haptic preferences remain only on the device.</p>
+      <p>Deleting Countdrop removes the local copy. If iCloud sync was active, the iCloud copy can restore progress after reinstalling. If you do not use iCloud, deleting the app removes the only copy.</p>
+    </div>
 
-<p>That copy lives in your iCloud account, under your Apple Account. It does not
-pass through any server of ours, and we have no way to read it: there is no
-back end and no CloudKit container on our side. It holds counters and receipts —
-streak length, coins, stars, which themes you have unlocked — and nothing that
-identifies you.</p>
+    <div class="legal-section reveal">
+      <h2>App Store purchases</h2>
+      <p>Countdrop offers optional, non-consumable cosmetic purchases. Payments, purchase history, refunds, and your payment information are handled by Apple through the App Store under <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple’s Privacy Policy</a>.</p>
+      <p>The app uses StoreKit on your device to request product information and confirm whether the Apple Account has a current verified entitlement. We do not receive your card details, and we do not copy App Store receipts to a developer-operated server.</p>
+      <p>Cosmetic selections may be included in your iCloud game save, but a selection alone never proves ownership. StoreKit verifies paid access again when the app launches or when you restore purchased items.</p>
+    </div>
 
-<p>Your sound and haptics preferences stay on the device and are not mirrored.</p>
+    <div class="legal-section reveal">
+      <h2>Game Center</h2>
+      <p>If you choose to use Game Center, Countdrop submits scores and achievement progress to Apple’s Game Center service. Game Center can also provide a display name and profile image for features you choose to use inside the app. This data is handled by Apple; it is not sent to a server operated by us. Countdrop remains playable without Game Center.</p>
+    </div>
 
-<p>Deleting the app removes the copy on your device. The copy in iCloud stays
-with your Apple Account — that is what lets a reinstall bring your progress
-back. It belongs to your Apple Account, not to us: we can neither read it nor
-delete it, and it goes with the rest of your iCloud data if you delete that
-account. If you are not signed in to iCloud, nothing is mirrored at all, and
-deleting the app removes everything.</p>
+    <div class="legal-section reveal">
+      <h2>Notifications</h2>
+      <p>If allowed, Countdrop schedules a Daily Challenge reminder locally on your device. No push notification token is collected by us, and no Countdrop server sends the reminder.</p>
+    </div>
 
-<h2>Game Center</h2>
-<p>If you choose to sign in to Game Center, Countdrop submits your scores and
-achievement progress to Apple's Game Center service so that leaderboards work.
-That data is handled by Apple under
-<a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>, not by
-us — we never see your Game Center identity, and we store nothing about you on
-any server of our own. Game Center is entirely optional; declining it leaves the
-game fully playable.</p>
+    <div class="legal-section reveal">
+      <h2>Children</h2>
+      <p>Countdrop is suitable for all ages and does not knowingly collect personal information from anyone, including children under 13.</p>
+    </div>
 
-<h2>Notifications</h2>
-<p>If you allow notifications, Countdrop schedules a daily reminder locally on
-your device. No notification is sent from a server, and no device token is
-collected or shared.</p>
+    <div class="legal-section reveal">
+      <h2>Changes</h2>
+      <p>If this policy changes, the revised policy will be posted at this address with a new update date.</p>
+    </div>
 
-<h2>Children</h2>
-<p>Countdrop is suitable for all ages and collects no data from anyone,
-including children under 13.</p>
+    <section class="utility-callout legal-section reveal">
+      <p><strong>Questions about privacy?</strong><br>We are happy to clarify how any part of Countdrop works.</p>
+      <a href="/support/#contact">Contact us</a>
+    </section>
+  </main>
 
-<h2>Changes</h2>
-<p>If this policy ever changes, the updated version will be posted at this
-address with a new date above.</p>
-
-<h2>Contact</h2>
-<p>Questions about privacy in Countdrop: <a href="mailto:support@countdrop.com">support@countdrop.com</a></p>
-
-<footer>
-  <nav><a href="../index.html">countdrop.com</a> · <a href="../support/index.html">Support</a>
-  · <a href="mailto:support@countdrop.com">support@countdrop.com</a></nav>
-  <div>© 2026 Sunimori.</div>
-</footer>
-
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="/" aria-label="Countdrop home"><span class="brand-mark" aria-hidden="true"><i>3</i><b></b><em></em></span><span>Countdrop</span></a>
+    <p>Drop. Match. Cascade.</p>
+    <nav aria-label="Footer navigation"><a href="/">Home</a><a href="/support/">Support</a><a href="/support/#contact">Contact</a></nav>
+        <small>© <span data-year>2026</span> Sunimori. All rights reserved.</small>
+  </footer>
 </body>
 </html>

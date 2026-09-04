@@ -1,101 +1,87 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<!-- Utility page: kept out of search on purpose, even after launch. It has to
-     be reachable, not findable — the App Store listing links straight here.
-     robots.txt blocks the whole site until launch; see the README. -->
-<meta name="robots" content="noindex, nofollow">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Countdrop — Support</title>
-<meta name="description" content="Help for Countdrop: the daily challenge, streak freezes, Game Center leaderboards, reminders, and restoring your progress on a new phone.">
-<style>
-  :root { color-scheme: dark; }
-  body {
-    margin: 0 auto; padding: 48px 24px 96px; max-width: 720px;
-    background: #12141a; color: #f1f3f5;
-    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  }
-  h1 { font-size: 32px; margin: 0 0 6px; }
-  h2 { font-size: 18px; margin: 38px 0 10px; color: #ffd43b; }
-  p, li { color: #ced4da; }
-  a { color: #ffd43b; }
-  .tag { color: #868e96; font-size: 14px; margin-bottom: 34px; }
-  .box { background: #1b1e27; border: 1px solid #252936; border-radius: 12px; padding: 18px 20px; }
-  .tile {
-    display: inline-flex; align-items: center; justify-content: center;
-    width: 30px; height: 30px; border-radius: 8px; margin-right: 6px;
-    font-weight: 800; color: #12141a; vertical-align: middle;
-  }
-  footer { border-top: 1px solid #252936; margin-top: 48px; padding-top: 26px; color: #868e96; font-size: 15px; }
-  footer nav { margin-bottom: 10px; }
-  footer a { text-decoration: none; }
-</style>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Countdrop — Support</title>
+  <meta name="description" content="Help with Countdrop gameplay, Daily Challenge, Game Center, iCloud progress, purchases, and restoring purchased items.">
+  <meta name="theme-color" content="#08090d">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/site.css?v=20260905-2">
+  <script src="/assets/site.js?v=20260905-2" defer></script>
 </head>
-<body>
+<body class="utility-body">
+  <div class="page-noise" aria-hidden="true"></div>
+  <header class="site-header is-scrolled" data-header>
+    <a class="brand" href="/" aria-label="Countdrop home"><span class="brand-mark" aria-hidden="true"><i>3</i><b></b><em></em></span><span>Countdrop</span></a>
+    <nav class="main-nav" aria-label="Utility navigation"><a href="/">Home</a><a href="/support/">Support</a><a href="/privacy/">Privacy</a></nav>
+    <a class="header-cta" href="https://apps.apple.com/app/id6799628531" target="_blank" rel="noopener"><span aria-hidden="true"></span> App Store</a>
+  </header>
 
-<h1>
-  <span class="tile" style="background:#fcc419">3</span>Countdrop
-</h1>
-<p class="tag">Drop a tile. Match the count. Watch it cascade.</p>
+  <main class="utility-main">
+    <section class="utility-hero reveal">
+      <div class="eyebrow"><span></span> Player support</div>
+      <h1>How can we help?</h1>
+      <p>Quick answers for gameplay, Daily Challenge, your progress, and optional cosmetic purchases.</p>
+    </section>
 
-<div class="box">
-  <p><strong>Questions, bugs, or ideas?</strong> Email
-  <a href="mailto:support@countdrop.com">support@countdrop.com</a> — every message is
-  read by the person who made the game.</p>
-</div>
+    <div class="utility-content">
+      <section class="utility-callout reveal" id="contact">
+        <p><strong>Questions, bugs, or ideas?</strong><br>Every message is read by the person who made the game.<br><a class="contact-address" href="mailto:support@countdrop.com">support@countdrop.com</a></p>
+        <button class="contact-copy" type="button" data-copy-email="support@countdrop.com" aria-live="polite">Copy email address</button>
+      </section>
 
-<h2>How the game works</h2>
-<p>A tile clears when its number equals how many tiles sit in its row or column
-run. Clearing a tile cracks open the grays beside it, revealing new numbers that
-may clear in turn — that is where chains come from. Every 6 drops a new row
-pushes up from the bottom; let it reach the top and the run ends.</p>
+      <section class="utility-card reveal">
+        <h2>How the game works</h2>
+        <p>A tile clears when its number equals how many tiles sit in its row or column run. Clearing a tile cracks open adjacent gray tiles, revealing new numbers that may clear in turn—that is where chains come from.</p>
+        <p>In standard play, every six drops a new row pushes up from the bottom. Let it reach the top and the run ends. Some Daily Challenge modifiers can change that rhythm.</p>
+      </section>
 
-<h2>Common questions</h2>
+      <section class="utility-card reveal">
+        <h2>Daily Challenge</h2>
+        <h3>Why can’t I replay today’s challenge?</h3>
+        <p>Every player gets the same board and one attempt, which keeps scores comparable. A new board arrives at 00:00 UTC. Endless mode can be played as often as you like.</p>
+        <h3>I closed the app during a Daily Challenge.</h3>
+        <p>Reopen Countdrop and the board will be exactly where you left it. Progress is saved after every drop.</p>
+        <h3>My streak survived a day I missed.</h3>
+        <p>You had a Streak Freeze banked. You earn one for every five days of streak, can hold up to two, and they are spent automatically on a missed day.</p>
+      </section>
 
-<p><strong>Why can't I replay today's daily challenge?</strong><br>
-The daily gives every player the same board and one attempt — that is what makes
-the score comparable. A new board arrives at 00:00 UTC. Endless mode can be
-played as often as you like.</p>
+      <section class="utility-card reveal">
+        <h2>Purchases and cosmetic themes</h2>
+        <h3>Are paid themes required?</h3>
+        <p>No. Countdrop is free to play without ads. Premium worlds and the Developer Supporter Pack are optional, one-time cosmetic purchases. They never improve scores, add tools, or give an advantage in Daily Challenge.</p>
+        <h3>How do I restore purchased items?</h3>
+        <p>Open <strong>Shop</strong>, scroll to the Developer Supporter Pack at the bottom, then tap <strong>Restore Purchased Items</strong>. Use the same Apple Account that made the purchase. The App Store may ask you to sign in.</p>
+        <h3>What is included in the Supporter Pack?</h3>
+        <p>The pack permanently unlocks the Midnight Cat theme, Midnight Cat avatar frame, and Supporter badge for the purchasing Apple Account.</p>
+        <h3>I was charged, but the item still looks locked.</h3>
+        <p>Wait a moment, reopen the Shop, and use Restore Purchased Items. If it remains locked, include your iOS version and device model when you <a href="#contact">contact support</a>. Do not email purchase receipts containing personal information unless Apple Support asks you to.</p>
+      </section>
 
-<p><strong>I closed the app in the middle of a daily run.</strong><br>
-Reopen it and the board is exactly where you left it. Progress is saved on every
-drop.</p>
+      <section class="utility-card reveal">
+        <h2>Game Center and reminders</h2>
+        <h3>Leaderboards are empty or won’t load.</h3>
+        <p>Leaderboards come from Game Center. Open iOS Settings → Game Center and confirm you are signed in. Countdrop remains fully playable without Game Center.</p>
+        <h3>I’m not receiving the daily reminder.</h3>
+        <p>Turn the reminder on in Countdrop’s settings, then confirm notifications are allowed for Countdrop in the iOS Settings app.</p>
+      </section>
 
-<p><strong>My streak survived a day I missed.</strong><br>
-You had a streak freeze banked. You earn one for every five days of streak, up to
-two, and they are spent automatically on a missed day.</p>
+      <section class="utility-card reveal">
+        <h2>Restoring game progress</h2>
+        <p>Gameplay progress is mirrored to your own iCloud. On a new phone, sign in with the same Apple Account, make sure iCloud is enabled, and open Countdrop. The game’s Settings screen shows whether iCloud sync is on.</p>
+        <p>There is no Countdrop account and no Countdrop server involved. If you play on two devices, the save with more progress is kept as a whole. Without iCloud, progress remains only on that device.</p>
+        <p>Real-money purchase ownership is handled separately by the App Store. Use Restore Purchased Items in the Shop after reinstalling if needed.</p>
+      </section>
+    </div>
+  </main>
 
-<p><strong>Leaderboards are empty or won't load.</strong><br>
-Leaderboards come from Game Center. Check Settings → Game Center on your device
-and make sure you are signed in. The game is fully playable without it.</p>
-
-<p><strong>I'm not getting the daily reminder.</strong><br>
-Turn it on in the game's settings, and check that notifications are allowed for
-Countdrop in the iOS Settings app.</p>
-
-<h2>Restoring progress</h2>
-<p>Your progress is mirrored to your own iCloud, so a new phone picks it up on
-its own. Sign in to the new device with the same Apple Account, make sure iCloud
-is on, and open Countdrop — the save is restored as the game launches. Settings
-inside the game shows whether iCloud sync is on.</p>
-
-<p>There is no account to sign in to and no server of ours involved; the save
-sits in your iCloud, where only your devices can reach it.</p>
-
-<p>If you play on two devices, the one further along wins: whichever save has
-more progress in it is the one that is kept, whole. And if you are not signed in
-to iCloud, nothing is mirrored — progress stays on that device only.</p>
-
-<h2>Privacy</h2>
-<p>Countdrop collects nothing at all, and we operate no server. See the
-<a href="../privacy/index.html">privacy policy</a>.</p>
-
-<footer>
-  <nav><a href="../index.html">countdrop.com</a> · <a href="../privacy/index.html">Privacy</a>
-  · <a href="mailto:support@countdrop.com">support@countdrop.com</a></nav>
-  <div>© 2026 Sunimori.</div>
-</footer>
-
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="/" aria-label="Countdrop home"><span class="brand-mark" aria-hidden="true"><i>3</i><b></b><em></em></span><span>Countdrop</span></a>
+    <p>Drop. Match. Cascade.</p>
+    <nav aria-label="Footer navigation"><a href="/">Home</a><a href="/privacy/">Privacy</a><a href="#contact">Contact</a></nav>
+        <small>© <span data-year>2026</span> Sunimori. All rights reserved.</small>
+  </footer>
 </body>
 </html>

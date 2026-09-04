@@ -1,14 +1,19 @@
 # countdrop.com
 
-The product site for Countdrop. Three static pages, no build step, no
-dependencies — plain HTML with inline CSS.
+The product site for Countdrop. Static HTML, CSS, and a tiny progressive-
+enhancement script; there is no build step or runtime dependency.
 
 ```
-index.html          landing page  → countdrop.com          (App Store marketing URL)
-support/index.html  support + FAQ → countdrop.com/support/ (App Store support URL, required)
-privacy/index.html  privacy policy→ countdrop.com/privacy/ (App Store privacy URL, required)
-CNAME               the custom domain GitHub Pages serves this repo at
-hero.png shot-*.png screenshots, regenerated from the game — see below
+index.html             landing page  → countdrop.com          (App Store marketing URL)
+support/index.html     support + FAQ → countdrop.com/support/ (App Store support URL, required)
+privacy/index.html     privacy policy→ countdrop.com/privacy/ (App Store privacy URL, required)
+race/index.html        Universal Link fallback for shared Daily Challenge races
+assets/site.css        shared visual system and responsive layout
+assets/site.js         reveal motion and the interactive theme showcase
+assets/screens/        current English in-game captures, resized for the web
+assets/video/          compressed, muted web version of the App Store preview
+assets/og-countdrop.jpg 1200×630 social sharing card built from current gameplay
+CNAME                  the custom domain GitHub Pages serves this repo at
 ```
 
 ## Deploying
@@ -20,9 +25,11 @@ about a minute.
 git add -A && git commit -m "..." && git push
 ```
 
-Screenshots come from the game itself, so regenerate them rather than editing by
-hand: capture raws on the `Countdrop-Shots` simulator, then re-run the resize
-step in the parent project.
+Screenshots and the preview come from the game itself, so regenerate them rather
+than editing by hand. Capture English raws on the `Countdrop-Shots` simulator,
+then create web-sized exports from the files in the parent game's
+`AppStorePreview/` directory. Keep stills around 720 px wide and the muted web
+preview around 2–4 MB so the landing page remains fast on mobile connections.
 
 **Done at launch (2026-09-01):** `robots.txt` and the `noindex` meta tag in
 `index.html` are gone, so the landing page is open to search. `support/`,
